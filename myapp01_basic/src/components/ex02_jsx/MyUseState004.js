@@ -12,15 +12,11 @@ const MyUseState004 = () => {
   };
 
   const handleAddress = (e) => {
-    {
-      setCustomer({ ...customer, address: e.target.value });
-    }
+    setCustomer({ ...customer, address: e.target.value });
   };
 
   const handlePhone = (e) => {
-    {
-      setCustomer({ ...customer, phone: e.target.value });
-    }
+    setCustomer({ ...customer, phone: e.target.value });
   };
 
   const handleCommit = (e) => {

@@ -11,6 +11,9 @@ import MyBasic002 from './components/ex02_jsx/MyUseState002';
 import MyUseState002 from './components/ex02_jsx/MyUseState002';
 import MyUseState003 from './components/ex02_jsx/MyUseState003';
 import MyUseState004 from './components/ex02_jsx/MyUseState004';
+import MyUseState005 from './components/ex02_jsx/MyUseState005';
+import MyUseState006 from './components/ex02_jsx/MyUseState006';
+import MyuseRef001 from './components/ex02_jsx/MyuseRef001';
 
 function App() {
   return (
@@ -23,7 +26,10 @@ function App() {
       {/*<MyBasic001 />*/}
       {/*<MyUseState002 />*/}
       {/*<MyUseState003 />*/}
-      {<MyUseState004 />}
+      {/*<MyUseState004 />*/}
+      {/*<MyUseState005 />*/}
+      {/*<MyUseState006 />*/}
+      {<MyuseRef001 />}
     </div>
   );
 }

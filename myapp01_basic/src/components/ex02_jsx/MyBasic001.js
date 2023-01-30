@@ -1,6 +1,6 @@
 const MyBasic001 = () => {
   let cnt = 0;
-  let coloe = 'black';
+  let color = 'black';
 
   const handleClick = () => {
     cnt = cnt + 1;
