@@ -1,4 +1,4 @@
-//function reducer(state, action) {}
+//functoin reducer(state, action)
 
 let boardList = [
   { id: 1, todoname: '운동하기', completed: 0 },
@@ -6,22 +6,22 @@ let boardList = [
   { id: 3, todoname: '사진정리하기', completed: 0 },
 ];
 
-export const reducer = (todos, auction) => {
-  switch (auction.type) {
-    case 'INSERT': // 추가
+export const reducer = (todos = boardList, action) => {
+  switch (action.type) {
+    case 'INSERT': //추가
       return [
-        { id: todos.length + 1, todoname: auction.todoname, cimpleted: 0 },
+        { id: todos.length + 1, todoname: action.todoname, completed: 0 },
         ...todos,
       ];
-    case 'UPDATE': //갱신
+    case 'UPDATE': //수정
       return todos.map((todo) =>
-        todo.id === auction.id
-          ? { ...todo, completed: completed === 1 ? 0 : 1 }
+        todo.id === action.id
+          ? { ...todo, completed: todo.completed === 1 ? 0 : 1 }
           : todo
       );
     case 'DELETE': //삭제
-      return todos.filter((todo) => todo.id !== auction.id);
-    default: //  목록
+      return todos.filter((todo) => todo.id !== action.id);
+    default: //목록
       return todos;
   }
 };
