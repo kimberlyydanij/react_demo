@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TableRow = (props) => {
   const { board, currentPage } = props;
   return (
@@ -7,15 +9,14 @@ const TableRow = (props) => {
         {board.re_level > 0 ? (
           <>
             <img
-              src='/images/level.gif'
+              src="/images/level.gif"
               width={20 * board.re_level}
-              height='15'
+              height="15"
             />
-            <img src='/images/re.gif' />
+            <img src="/images/re.gif" />
           </>
         ) : null}
         <Link to={`/board/view/${currentPage}/${board.num}`}>
-          {' '}
           {board.subject}
         </Link>
       </td>
